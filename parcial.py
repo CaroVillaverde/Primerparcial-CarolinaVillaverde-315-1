@@ -38,7 +38,7 @@ while opcion != "7":
     match opcion: 
         
         case "1": #Agregar productos
-            codigo = input(int("Ingrese el código de su producto: (o 'salir' para volver al menú principal)"))
+            codigo = input(int("Ingrese el código de su producto: "))
             
             repetido = False 
             
@@ -74,8 +74,6 @@ while opcion != "7":
                 
                 
                 
-                
-                
         case "2": #Mostrar productos 
             
             if len(codigos) == 0:
@@ -90,6 +88,9 @@ while opcion != "7":
                     print("Nombre de producto: ", nombres[i])
                     print("Código de producto: ", precios[i])
                     print("Cantidad disponible del producto", cantidad[i])
+                    
+                    
+                    
         case "3": #Buscar productos
             
             buscar = int(input("Ingrese el código que desea buscar: "))      
@@ -110,18 +111,13 @@ while opcion != "7":
             if encontrado == False: 
                 print("Producto no encontrado.")
                 
+                
+                
         case "4": #Ordenar productos por precio
             
             for i in range(len(precios))     
                 
     
-        
             
         case "5": #Mostrar producto con menor stock
             
-
-
-
-
-
-
